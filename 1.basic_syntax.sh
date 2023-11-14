@@ -25,6 +25,9 @@ cd
 # 다시 기존 폴더로 이동
 cd home/bellwin/bellwin_dir
 
+# 바로 직전 경로로 이동
+cd -
+
 # 상위 폴더로 이동
 cd ..
 
