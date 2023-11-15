@@ -10,6 +10,9 @@ ls -l
 # + 숨김 파일까지 (가장 많이 사용)
 ls -al
 
+# + 최근 수정시간 순으로 정렬
+ls -alrt
+
 # 디렉토리 생성
 mkdir bellwin_dir
 
@@ -62,7 +65,7 @@ nano myscript.sh # ctrl+o (write-out) -> ctrl+x (나가기)
 chmod 777 # 권한 전체 부여
 
 # 파일 실행
-./myscript.sh # .은 현재 폴더를 의미, ./는 현재 폴더 내에 있는 실행 파일을 찾아서 실행하라는 의미
+./myscript.sh # .은 현재 경로를 의미, ./는 현재 폴더 내에 있는 실행 파일을 찾아서 실행하라는 의미
 
 # rm은 삭제 명령어, rm -r은 디렉토리까지 삭제
 # rm -rf는 디렉토리까지 묻지 않고 삭제 (f: force)
@@ -83,8 +86,10 @@ mv test_dir second_dir # 단순 이름 변경
 # head는 cat처럼 파일을 출력, 상위 10개행 조회
 # tail은 하위 10개행 조회
 # head -n은 상위 n개행 조회, tail -n은 하위 n개행 조회
+# 무슨 파일인지 슥 보려고 사용함
 head/tail first_file.txt
 head/tail -n first_file.txt
 
-# 리다이렉션 A | B
-# A 명령어의 결과를 B에 대입
+# A | B (파이프라인)
+# A 명령어의 결과값을 B 명령어로 전달
+
