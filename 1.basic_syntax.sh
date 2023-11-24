@@ -92,4 +92,3 @@ head/tail -n first_file.txt
 
 # A | B (파이프라인)
 # A 명령어의 결과값을 B 명령어로 전달
-
